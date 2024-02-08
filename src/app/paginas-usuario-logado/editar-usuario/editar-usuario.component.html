@@ -1,1 +1,22 @@
-<h1>{{idUsuario}}</h1>
+<div class="container">
+  <h2>Formulário de Registro</h2>
+  <form [formGroup]="formEdicaoUsuario" (ngSubmit)="atualizarUsuario()">
+    <div class="dados-cadastrais">
+      <input type="text" pInputText placeholder="Usuário" formControlName="login"/>
+      <input type="text" pInputText placeholder="Nome Completo" formControlName="nomeCompleto"/>
+      <input type="email" pInputText placeholder="Email" formControlName="email"/>
+      <p-dropdown formControlName="perfil" [options]="perfis" optionLabel="descricao" placeholder="Selecione um Perfil"
+                  [readonly]="ehPerfilComum()" [disabled]="ehPerfilComum()"></p-dropdown>
+    </div>
+    <h3>Endereço</h3>
+    <div class="endereco">
+      <input type="text" pInputText placeholder="Rua" formControlName="rua"/>
+      <input type="text" pInputText placeholder="Bairro" formControlName="bairro"/>
+      <input type="text" pInputText placeholder="Cidade" formControlName="cidade"/>
+    </div>
+    <div class="button-wrapper">
+      <p-button label="Voltar" (click)="redirecionarParaHome()"></p-button>
+      <p-button type="submit" label="Salvar"></p-button>
+    </div>
+  </form>
+</div>

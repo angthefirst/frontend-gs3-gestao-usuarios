@@ -16,6 +16,7 @@ import {ToolbarModule} from "primeng/toolbar";
 import {TableModule} from "primeng/table";
 import {TokenInterceptor} from "./services/interceptor/token.interceptor";
 import {EditarUsuarioComponent} from "./paginas-usuario-logado/editar-usuario/editar-usuario.component";
+import {DropdownModule} from "primeng/dropdown";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {EditarUsuarioComponent} from "./paginas-usuario-logado/editar-usuario/ed
     BrowserAnimationsModule,
     HttpClientModule,
     ToolbarModule,
-    TableModule
+    TableModule,
+    DropdownModule
   ],
   providers: [HttpClient,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
