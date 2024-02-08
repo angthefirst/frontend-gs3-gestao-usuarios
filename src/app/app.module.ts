@@ -10,13 +10,20 @@ import {AppRoutingModule} from "./app.routing.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ToastModule} from "primeng/toast";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from "@angular/common/http";
+import {HomeComponent} from "./paginas-usuario-logado/home/home.component";
+import {ToolbarModule} from "primeng/toolbar";
+import {TableModule} from "primeng/table";
+import {TokenInterceptor} from "./services/interceptor/token.interceptor";
+import {EditarUsuarioComponent} from "./paginas-usuario-logado/editar-usuario/editar-usuario.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    HomeComponent,
+    EditarUsuarioComponent
   ],
   imports: [
     AppRoutingModule,
@@ -26,9 +33,12 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     ToastModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToolbarModule,
+    TableModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient,
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,15 +12,25 @@ export class LocalStorageService {
     const tokenDecodificado = this.decodificarToken(token);
     const perfil = tokenDecodificado ? tokenDecodificado.perfis[0] : null;
     localStorage.setItem('perfil', perfil);
+    localStorage.setItem('idUsuario', tokenDecodificado.idUsuario);
   }
 
   obterPerfilDoUsuarioLogado(): string | null {
     return localStorage.getItem('perfil');
   }
 
+  obterToken(): string | null {
+    return localStorage.getItem('token');
+  }
+
+  obterIdUsuarioLogado(): string | null {
+    return localStorage.getItem('idUsuario');
+  }
+
   removerDadosDoLocalStorage() {
     localStorage.removeItem('token');
     localStorage.removeItem('perfil');
+    localStorage.removeItem('idUsuario');
   }
 
   decodificarToken(token: string): any {

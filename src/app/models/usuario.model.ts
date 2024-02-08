@@ -11,11 +11,11 @@ export interface UsuarioDTO {
   endereco: EnderecoDTO;
 }
 
-export interface ComumUsuarioDTO {
+export interface RetornoDadosUsuarioDTO {
   id: string;
   login: string;
-  senha: string;
   nomeCompleto: string;
   email: string;
+  perfil: PerfilDTO | null;
   endereco: EnderecoDTO;
 }
