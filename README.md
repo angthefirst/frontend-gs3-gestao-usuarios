@@ -9,6 +9,9 @@ A execução completa do projeto depende do backend (https://github.com/angthefi
 
 ## Sobre o projeto
 Utiliza a biblioteca PrimeNG para componentes visuais
+
 Formulários reativos
+
 Controle de permissão através do localStorage
+
 ClientHTTP para chamadas ao backend
