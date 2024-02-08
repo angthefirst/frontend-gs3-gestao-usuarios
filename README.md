@@ -12,7 +12,7 @@ Utiliza a biblioteca PrimeNG para componentes visuais
 
 Formulários reativos e com validações
 
-Controle de permissão através do localStorage
+Controle de permissão através de token JWT e uso do localStorage
 
 Login, registro de novos usuários e edição de usuários já cadastrados
 
