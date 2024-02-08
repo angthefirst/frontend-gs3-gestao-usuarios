@@ -10,9 +10,11 @@ A execução completa do projeto depende do backend (https://github.com/angthefi
 ## Sobre o projeto
 Utiliza a biblioteca PrimeNG para componentes visuais
 
-Formulários reativos
+Formulários reativos e com validações
 
 Controle de permissão através do localStorage
+
+Login, registro de novos usuários e edição de usuários já cadastrados
 
 ClientHTTP para chamadas ao backend
 
