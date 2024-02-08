@@ -1,6 +1,6 @@
 # Frontend GS3 Gestao Usuarios
 
-Este projeto foi feito utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.12.
+Este projeto foi feito para atender um desafio técnico e utiliza do [Angular CLI](https://github.com/angular/angular-cli) na versão 16.2.12.
 
 ## Como executar
 
@@ -15,3 +15,9 @@ Formulários reativos
 Controle de permissão através do localStorage
 
 ClientHTTP para chamadas ao backend
+
+Verificação de rotas inválidas
+
+
+## Período do desafio técnico (backend e frontend)
+06/02/2024 a 08/02/2024
