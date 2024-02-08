@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Formulário de Registro</h2>
-  <form>
+  <form [formGroup]="form" (ngSubmit)="registrarUsuario()">
     <div class="dados-cadastrais">
       <input type="text" pInputText placeholder="Usuário" formControlName="login"/>
       <input type="password" pInputText placeholder="Senha" formControlName="senha"/>
@@ -15,7 +15,7 @@
     </div>
     <div class="button-wrapper">
       <p-button label="Voltar a página inicial" (click)="redirecionarParaPaginaInicial()"></p-button>
-      <p-button label="Registrar"></p-button>
+      <p-button type="submit" label="Registrar"></p-button>
     </div>
   </form>
 </div>
