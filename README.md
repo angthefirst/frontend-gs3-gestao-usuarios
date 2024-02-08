@@ -16,8 +16,12 @@ Controle de permissão através do localStorage
 
 ClientHTTP para chamadas ao backend
 
+HttpInterceptor
+
 Verificação de rotas inválidas
 
 
 ## Período do desafio técnico (backend e frontend)
 06/02/2024 a 08/02/2024
+
+Por conta do curto período para elaboração do desafio houve débito de testes unitários
