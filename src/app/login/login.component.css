@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 18em;
+  padding: 1em;
+}
+
+.input-wrapper {
+  margin-bottom: 1.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+}
+
+.linha-vertical {
+  height: 15em;
+  border-left: 2px solid;
+  margin-left: 2em;
+}

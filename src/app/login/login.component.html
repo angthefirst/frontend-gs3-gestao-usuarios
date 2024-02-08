@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>GS3 - Gestão de Usuários</h2>
+  <div class="linha-vertical"></div>
+  <form class="login-form">
+    <div class="input-wrapper">
+      <input type="text" pInputText placeholder="Usuário" formControlName="login"/>
+      <input type="password" pInputText placeholder="Senha" formControlName="senha"/>
+    </div>
+    <div class="button-wrapper">
+      <p-button label="Entrar"></p-button>
+      <p-button label="Registrar" (click)="redirecionarParaCadastro()"></p-button>
+    </div>
+  </form>
+</div>

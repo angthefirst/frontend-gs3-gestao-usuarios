@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Formulário de Registro</h2>
+  <form>
+    <div class="dados-cadastrais">
+      <input type="text" pInputText placeholder="Usuário" formControlName="login"/>
+      <input type="password" pInputText placeholder="Senha" formControlName="senha"/>
+      <input type="text" pInputText placeholder="Nome Completo" formControlName="nomeCompleto"/>
+      <input type="email" pInputText placeholder="Email" formControlName="email"/>
+    </div>
+    <h3>Endereço</h3>
+    <div class="endereco">
+      <input type="text" pInputText placeholder="Rua" formControlName="rua"/>
+      <input type="text" pInputText placeholder="Bairro" formControlName="bairro"/>
+      <input type="text" pInputText placeholder="Cidade" formControlName="cidade"/>
+    </div>
+    <div class="button-wrapper">
+      <p-button label="Voltar a página inicial" (click)="redirecionarParaPaginaInicial()"></p-button>
+      <p-button label="Registrar"></p-button>
+    </div>
+  </form>
+</div>
